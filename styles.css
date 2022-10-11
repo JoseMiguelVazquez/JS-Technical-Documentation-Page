@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: rgb(58, 58, 58);
+    line-height: 1.5;
+}
+
+body {
+    position: relative;
+    background-color: rgb(245, 245, 233);
+}
+
+header {
+    font-size: 2rem;
+    font-weight: 500;
+    color: rgb(29, 29, 29);
+}
+
+#navbar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    min-width: 290px;
+    height: 100%;
+    border-right: 3px solid rgb(129, 118, 67);
+    background-color: rgb(248, 248, 229);
+}
+
+#navbar header {
+    margin: 10px;
+    text-align: center;
+}
+
+#navbar ul {
+    list-style-type: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 88%;
+}
+
+#navbar li {
+    width: 100%;
+    height: 45px;
+    border-top: 1px solid rgb(129, 118, 67);
+    text-align: left;
+}
+
+#navbar li:hover {
+    background-color: rgb(231, 231, 208);
+}
+
+.nav-link {
+    display: block;
+    padding: 10px 30px;
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(58, 58, 58);
+    margin: auto;
+    font-size: 1.1rem;
+}
+
+#main-doc {
+    position: absolute;
+    width: calc(100% - 310px);
+    right: 0;
+    padding: 20px;
+}
+
+.main-section article {
+    margin: 20px;
+}
+
+p {
+    margin: 15px 5px;
+    text-align: justify;
+}
+
+.main-section ul {
+    margin-left: 60px;
+    margin-bottom: 15px;
+}
+
+.main-section ul li {
+    margin-bottom: 15px;
+}
+
+code {
+    display: block;
+    font-size: 0.8rem;
+    background-color: rgb(231, 231, 208);
+    margin: 10px;
+    padding: 15px;
+    line-height: 2;
+}
+
+#Data_types ul li ul {
+    margin-top: 15px;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    z-index: 10;
+    font-size: 1.2rem;
+    background-color: rgb(80, 74, 61);
+    cursor: pointer;
+    width: 110px;
+    height: 30px;
+}
+
+.back-to-top a {
+    text-decoration: none;
+    color: rgb(245, 245, 226);
+    margin: auto;
+}
+
+.button-vertical {
+    display: block;
+}
+
+.button-horizontal {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #navbar {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 290px;
+        border-bottom: 3px solid rgb(129, 118, 67);
+        border-right: none;
+    }
+    #navbar ul {
+        height: 225px;
+    }
+    #main-doc {
+        width: 100%;
+        margin-top: 310px;
+    }
+    .button-vertical {
+        display: none;
+    }
+    .button-horizontal {
+        display: block;
+    }
+}
